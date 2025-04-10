@@ -31,7 +31,7 @@ gray_noise_prob2: 0.4
 jpeg_range2: [30, 95]
 
 gt_size: 256
-queue_size: 180
+queue_size: 184
 
 # dataset and data loader settings
 datasets:
@@ -123,10 +123,10 @@ train:
 
   scheduler:
     type: MultiStepLR
-    milestones: [400000]
+    milestones: [100]
     gamma: 0.5
 
-  total_iter: 400000
+  total_iter: 100
   warmup_iter: -1  # no warm up
 
   # losses
